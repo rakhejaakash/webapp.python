@@ -1,0 +1,15 @@
+$def with (listdirs, listfiles, topdirectory)
+
+<html>
+  <head>
+    <title>Download from desktop!</title>
+  </head>
+  <body>
+      <ul>
+      $for directory in listdirs:
+        <li><a href="/download/$topdirectory$directory">$directory</a></li>
+      $for filename in listfiles:
+        <li><a href="/download/$topdirectory$filename">$filename</a></li>
+      </ul>
+  </body>
+</html>

@@ -1,2 +1,5 @@
+upload/
+share/
 .venv/
 __pycache__/
+.DS_Store
